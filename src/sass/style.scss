@@ -1,0 +1,23 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('http://fonts.cdnfonts.com/css/gotham');
+@import url('https://fonts.googleapis.com/css2?family=Akshar&family=Roboto:wght@500&display=swap');
+
+
+@import 'base/variables';
+
+* {
+    font-family: $font-gotham;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@import 'blocks/header';
+@import 'blocks/quiz';
+
+
+@import 'blocks/media';
