@@ -10,7 +10,18 @@
         text-align: center;
     }
 
+    .active {
+        color: #1A191C;
+    }
+
+    .wrapper {
+        float: right;
+        padding-right: 43px;
+    }
+
     &__subtitle {
+        width: 765px;
+        margin: 0 auto;
         margin-top: 33px;
         font-family: $font-gotham;
         font-size: 18px;
@@ -20,14 +31,87 @@
     }
 
     &__content {
-        display: flex;
+        font-family: 'Gotham Pro';
         margin-top: 70px;
         margin-bottom: 147px;
-        width: 100%;
+        width: 1170px;
         height: 480px;
         background: #fff;
         border: 1px solid #E3E3E3;
         box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.08);
         border-radius: 4px;
+
+
+        &-img {
+            width: 270px;
+            height: 100%;
+            float: left;
+        }
+
+        &-progress {
+            width: 810px;
+            height: 50px;
+            margin-top: 27px;
+            padding-left: 50px;
+            padding-right: 43px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            line-height: 14px;
+            color: #C4C4C4;
+            border-bottom: 1px solid #E8E8E8;
+        }
+
+        &-num {
+            width: 44px;
+            height: 44px;
+            line-height: 40px;
+            border: 2px solid $main-color;
+            border-radius: 100%;
+            align-items: center;
+            text-align: center;
+        }
+
+        &-question {
+            margin-top: 23px;
+            font-size: 20px;
+            line-height: 28px;
+            color: #1A191C;
+            display: flex;
+            align-items: center;
+        }
+
+        &-num {
+            margin-right: 11px;
+        }
+
+        &-answer {
+            width: 810px;
+            height: 184px;
+            margin-top: 32px;
+
+            textarea {
+                width: 100%;
+                height: 100%;
+                font-size: 13px;
+                line-height: 14px;
+                resize: none;
+                color: #1A191C;
+                padding: 22px;
+                border: 1px solid #D5D5D5;
+                border-radius: 6px;
+            }
+        }
+
+        &-btn {
+            background: #009FE3;
+            border: none;
+            border-radius: 6px;
+            color: #fff;
+            width: 143px;
+            height: 40px;
+            margin-top: 35px;
+            float: right;
+        }
     }
 }
