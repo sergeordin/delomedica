@@ -90,6 +90,21 @@
             height: 184px;
             margin-top: 32px;
 
+            p {
+                margin-bottom: 10px;
+                font-weight: 300;
+                font-size: 13px;
+                color: #1A191C;
+
+                input {
+                    width: 24px;
+                    height: 24px;
+                    border: 1px solid #D5D5D5;
+                    border-radius: 4px;
+                    margin-right: 10px;
+                }
+            }
+
             textarea {
                 width: 100%;
                 height: 100%;
@@ -103,7 +118,14 @@
             }
         }
 
-        &-btn {
+        &-nav {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        &-btn-next {
             background: #009FE3;
             border: none;
             border-radius: 6px;
@@ -111,7 +133,27 @@
             width: 143px;
             height: 40px;
             margin-top: 35px;
-            float: right;
+            position: absolute;
+            right: 0;
+        }
+
+        &-btn-prev {
+            background-color: #fff;
+            border: none;
+            color: #1A191C;
+            width: 143px;
+            height: 40px;
+            margin-top: 35px;
         }
     }
+}
+
+.checkbox-col-1 {
+    width: 50%;
+    float: left;
+}
+
+
+.hidden {
+    display: none;
 }
